@@ -1,6 +1,16 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 export function Hero() {
+      const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
     const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -11,6 +21,13 @@ export function Hero() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+              <div
+        className="absolute w-96 h-96 bg-green-500/20 rounded-full blur-3xl transition-all duration-300"
+        style={{
+          left: `${mousePosition.x - 192}px`,
+          top: `${mousePosition.y - 192}px`,
+        }}
+      />
       <div
         className="absolute w-96 h-96 bg-green-500/20 rounded-full blur-3xl transition-all duration-300"
               <div className="absolute inset-0 overflow-hidden">
