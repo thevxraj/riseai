@@ -32,15 +32,15 @@ export function Contact() {
     <section id="contact" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-6">
-            <Send className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-cyan-300">Get In Touch</span>
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full mb-6">
+            <Send className="w-4 h-4 text-green-400" />
+            <span className="text-sm text-green-300">Get In Touch</span>
           </div>
 
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-white">Let's Build</span>
             <br />
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
               Something Amazing
             </span>
           </h2>
@@ -60,19 +60,19 @@ export function Contact() {
             return (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 text-center"
+                className="group bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm border border-green-500/20 rounded-2xl p-6 hover:border-green-500/50 transition-all duration-300 hover:scale-105 text-center"
               >
                 <div className="inline-block mb-4">
                   <div className="relative">
-                    <div className="absolute inset-0 blur-xl bg-cyan-500/30 group-hover:bg-cyan-400/50 transition-all" />
-                    <div className="relative p-4 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl">
+                    <div className="absolute inset-0 blur-xl bg-green-500/30 group-hover:bg-green-400/50 transition-all" />
+                    <div className="relative p-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
                 {item.link ? (
-                  <a href={item.link} className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                  <a href={item.link} className="text-green-400 hover:text-green-300 transition-colors">
                     {item.value}
                   </a>
                 ) : (
@@ -84,19 +84,19 @@ export function Contact() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-3xl p-8 md:p-12 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
+          <div className="bg-gradient-to-br from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-green-500/30 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
 
             <div className="relative">
               {submitted ? (
                 <div className="text-center py-16">
                   <div className="inline-block mb-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
                       <CheckCircle className="w-10 h-10 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">Message Sent!</h3>
+                  <h3 className="text-3xl font-bold text-white mb-4">Message Sent</h3>
                   <p className="text-gray-400">We'll get back to you within 24 hours.</p>
                 </div>
               ) : (
@@ -112,7 +112,7 @@ export function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                        className="w-full px-4 py-3 bg-slate-900/50 border border-green-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                         placeholder="John Doe"
                       />
                     </div>
@@ -127,7 +127,7 @@ export function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                        className="w-full px-4 py-3 bg-slate-900/50 border border-green-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                         placeholder="john@company.com"
                       />
                     </div>
@@ -143,7 +143,7 @@ export function Contact() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                        className="w-full px-4 py-3 bg-slate-900/50 border border-green-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                         placeholder="Your Company"
                       />
                     </div>
@@ -156,10 +156,10 @@ export function Contact() {
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                        className="w-full px-4 py-3 bg-slate-900/50 border border-green-500/30 rounded-xl text-white focus:outline-none focus:border-green-500 transition-colors"
                       >
                         <option value="">Select a service</option>
-                        <option value="automation">AI Automation & Workflows</option>
+                        <option value="automation">AI Automation and Workflows</option>
                         <option value="receptionist">AI Receptionist</option>
                         <option value="chatbot">Chatbots</option>
                         <option value="web">Web Design</option>
@@ -178,14 +178,14 @@ export function Contact() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
+                      className="w-full px-4 py-3 bg-slate-900/50 border border-green-500/30 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors resize-none"
                       placeholder="Tell us about your project..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl text-white font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+                    className="w-full py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl text-white font-semibold hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
                   >
                     <span>Send Message</span>
                     <Send className="w-5 h-5" />
@@ -198,7 +198,7 @@ export function Contact() {
 
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-2 text-gray-400">
-            <MapPin className="w-5 h-5 text-cyan-400" />
+            <MapPin className="w-5 h-5 text-green-400" />
             <span>Serving businesses worldwide with cutting-edge AI solutions</span>
           </div>
         </div>

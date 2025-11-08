@@ -6,32 +6,32 @@ const services = [
     title: 'AI Automation & Workflows',
     description: 'Streamline your operations with intelligent automation that learns and adapts. Reduce manual tasks by up to 80% with our custom AI workflows.',
     features: ['Process Automation', 'Data Integration', 'Smart Scheduling', 'Custom Solutions'],
-    color: 'from-cyan-500 to-blue-600',
-    glowColor: 'cyan'
+    color: 'from-green-500 to-emerald-600',
+    glowColor: 'green'
   },
   {
     icon: Bot,
     title: 'AI Receptionists',
     description: 'Never miss a call again. Our AI receptionists handle inquiries, schedule appointments, and provide 24/7 customer support with human-like interactions.',
     features: ['24/7 Availability', 'Natural Conversations', 'Appointment Booking', 'Multi-language Support'],
-    color: 'from-blue-500 to-violet-600',
-    glowColor: 'blue'
+    color: 'from-emerald-500 to-green-600',
+    glowColor: 'emerald'
   },
   {
     icon: MessageSquare,
     title: 'Advanced Chatbots',
-    description: 'Engage customers instantly with AI-powered chatbots that understand context, provide accurate answers, and escalate when needed.',
+    description: 'Engage customers instantly with AI powered chatbots that understand context, provide accurate answers, and escalate when needed.',
     features: ['Instant Responses', 'Lead Qualification', 'CRM Integration', 'Analytics Dashboard'],
-    color: 'from-violet-500 to-cyan-600',
-    glowColor: 'violet'
+    color: 'from-green-600 to-emerald-500',
+    glowColor: 'green'
   },
   {
     icon: Palette,
     title: 'Web Design & Development',
     description: 'Create stunning, high-performance websites that captivate your audience. Modern designs optimized for conversion and user experience.',
     features: ['Responsive Design', 'SEO Optimized', 'Fast Loading', 'Custom Development'],
-    color: 'from-cyan-500 to-teal-600',
-    glowColor: 'teal'
+    color: 'from-emerald-600 to-green-500',
+    glowColor: 'emerald'
   }
 ];
 
@@ -40,13 +40,13 @@ export function Services() {
     <section id="services" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-6">
-            <Zap className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-cyan-300">Our Services</span>
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full mb-6">
+            <Zap className="w-4 h-4 text-green-400" />
+            <span className="text-sm text-green-300">Our Services</span>
           </div>
 
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
               Powerful Solutions
             </span>
             <br />
@@ -64,7 +64,7 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="group relative bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-500 hover:scale-105"
+                className="group relative bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm border border-green-500/20 rounded-2xl p-8 hover:border-green-500/50 transition-all duration-500 hover:scale-105"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500`} />
 
@@ -78,7 +78,7 @@ export function Services() {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors">
                     {service.title}
                   </h3>
 
@@ -90,14 +90,14 @@ export function Services() {
                     {service.features.map((feature, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-sm text-cyan-300"
+                        className="px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-sm text-green-300"
                       >
                         {feature}
                       </span>
                     ))}
                   </div>
 
-                  <button className="text-cyan-400 font-semibold flex items-center space-x-2 group-hover:translate-x-2 transition-transform">
+                  <button className="text-green-400 font-semibold flex items-center space-x-2 group-hover:translate-x-2 transition-transform">
                     <span>Learn More</span>
                     <Shield className="w-4 h-4" />
                   </button>
@@ -108,16 +108,16 @@ export function Services() {
         </div>
 
         <div className="mt-20 text-center">
-          <div className="inline-block bg-gradient-to-r from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 md:p-12">
+          <div className="inline-block bg-gradient-to-r from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-green-500/30 rounded-2xl p-8 md:p-12">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Ready to Transform Your Business?
+              Ready to Transform Your Business
             </h3>
             <p className="text-gray-400 mb-6 max-w-2xl">
               Join hundreds of companies already leveraging AI to scale their operations and delight their customers
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full text-white font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full text-white font-semibold hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105"
             >
               Get Your Free Consultation
             </button>

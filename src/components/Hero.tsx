@@ -33,7 +33,7 @@ export function Hero() {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute bg-green-400/10 rounded-full"
+            className="absolute bg-green-400/10 rounded-full animate-pulse"
             style={{
               width: Math.random() * 4 + 1 + 'px',
               height: Math.random() * 4 + 1 + 'px',
@@ -47,13 +47,13 @@ export function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-        <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full mb-8">
+        <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full mb-8 animate-pulse">
           <Sparkles className="w-4 h-4 text-green-400" />
-          <span className="text-sm text-green-300">Next-Generation AI Solutions</span>
+          <span className="text-sm text-green-300">Next Generation AI Solutions</span>
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-          <span className="bg-gradient-to-r from-green-400 via-green-500 to-green-400 bg-clip-text text-transparent animate-gradient">
+          <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-400 bg-clip-text text-transparent animate-gradient">
             Rise Above
           </span>
           <br />
@@ -68,7 +68,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <button
             onClick={scrollToContact}
-            className="group px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 rounded-full text-white font-semibold hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 flex items-center space-x-2"
+            className="group px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full text-white font-semibold hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 flex items-center space-x-2"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

@@ -6,21 +6,21 @@ export function About() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center space-x-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-6">
-              <Award className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-cyan-300">About Rise AI</span>
+            <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full mb-6">
+              <Award className="w-4 h-4 text-green-400" />
+              <span className="text-sm text-green-300">About Rise AI</span>
             </div>
 
             <h2 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="text-white">Pioneering the</span>
               <br />
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
                 AI Revolution
               </span>
             </h2>
 
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-              At Rise AI, we're not just following trends—we're creating the future of business automation.
+              At Rise AI, we are not just following trends we are creating the future of business automation.
               Our mission is to empower organizations with intelligent solutions that drive efficiency,
               enhance customer experiences, and unlock unprecedented growth.
             </p>
@@ -35,8 +35,8 @@ export function About() {
                 return (
                   <div key={index} className="flex items-start space-x-4 group">
                     <div className="relative">
-                      <div className="absolute inset-0 blur-lg bg-cyan-500/30 group-hover:bg-cyan-400/50 transition-all" />
-                      <div className="relative p-3 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg">
+                      <div className="absolute inset-0 blur-lg bg-green-500/30 group-hover:bg-green-400/50 transition-all" />
+                      <div className="relative p-3 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg">
                         <Icon className="w-5 h-5 text-white" />
                       </div>
                     </div>
@@ -51,20 +51,20 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20 blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-600/20 blur-3xl" />
 
-            <div className="relative bg-gradient-to-br from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 md:p-12">
+            <div className="relative bg-gradient-to-br from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-green-500/30 rounded-2xl p-8 md:p-12">
               <div className="mb-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 relative group">
-                  <div className="absolute inset-0 blur-xl bg-cyan-500/50 group-hover:bg-cyan-400/70 transition-all" />
+                <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 relative group">
+                  <div className="absolute inset-0 blur-xl bg-green-500/50 group-hover:bg-green-400/70 transition-all" />
                   <span className="relative text-4xl font-bold text-white">VS</span>
                 </div>
 
                 <h3 className="text-3xl font-bold text-white mb-4">
                   Meet Viraj S
                 </h3>
-                <div className="text-cyan-400 font-semibold mb-6">
-                  Founder & CEO
+                <div className="text-green-400 font-semibold mb-6">
+                  Founder and CEO
                 </div>
 
                 <p className="text-gray-400 leading-relaxed mb-6">
@@ -89,9 +89,9 @@ export function About() {
                     return (
                       <div
                         key={index}
-                        className="flex items-center space-x-3 bg-cyan-500/5 border border-cyan-500/20 rounded-lg p-3 hover:border-cyan-500/50 transition-colors"
+                        className="flex items-center space-x-3 bg-green-500/5 border border-green-500/20 rounded-lg p-3 hover:border-green-500/50 transition-colors"
                       >
-                        <Icon className="w-5 h-5 text-cyan-400" />
+                        <Icon className="w-5 h-5 text-green-400" />
                         <span className="text-sm text-gray-300">{item.label}</span>
                       </div>
                     );
@@ -104,15 +104,15 @@ export function About() {
 
         <div className="mt-20 grid md:grid-cols-3 gap-8">
           {[
-            { value: '5+', label: 'Years Experience', description: 'In AI & Automation' },
+            { value: '5+', label: 'Years Experience', description: 'In AI and Automation' },
             { value: '100%', label: 'Client Success', description: 'Focused Approach' },
             { value: '∞', label: 'Innovation', description: 'Continuous Improvement' }
           ].map((stat, index) => (
             <div
               key={index}
-              className="text-center p-8 bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm border border-cyan-500/20 rounded-2xl hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 group"
+              className="text-center p-8 bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm border border-green-500/20 rounded-2xl hover:border-green-500/50 transition-all duration-300 hover:scale-105 group"
             >
-              <div className="text-5xl font-bold text-cyan-400 mb-3 group-hover:scale-110 transition-transform">
+              <div className="text-5xl font-bold text-green-400 mb-3 group-hover:scale-110 transition-transform">
                 {stat.value}
               </div>
               <div className="text-xl font-semibold text-white mb-2">{stat.label}</div>
