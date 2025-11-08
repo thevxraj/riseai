@@ -26,7 +26,7 @@ export function Hero() {
         style={{
           left: `${mousePosition.x - 192}px`,
           top: `${mousePosition.y - 192}px`,
-        }}
+        }}>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
