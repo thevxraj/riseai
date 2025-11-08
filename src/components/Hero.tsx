@@ -27,24 +27,6 @@ export function Hero() {
           left: `${mousePosition.x - 192}px`,
           top: `${mousePosition.y - 192}px`,
         }}
-      />
-      <div
-        className="absolute w-96 h-96 bg-green-500/20 rounded-full blur-3xl transition-all duration-300"
-              <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute bg-green-400/10 rounded-full animate-pulse"
-            style={{
-              width: Math.random() * 4 + 1 + 'px',
-              height: Math.random() * 4 + 1 + 'px',
-              left: Math.random() * 100 + '%',
-              top: Math.random() * 100 + '%',
-              animationDelay: Math.random() * 2 + 's',
-              animationDuration: Math.random() * 3 + 2 + 's',
-            }}
-          />
-        ))}
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
